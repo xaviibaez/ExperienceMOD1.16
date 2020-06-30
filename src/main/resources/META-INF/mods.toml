@@ -6,7 +6,7 @@ issueTrackerURL="http://my.issue.tracker/" #optional
 
 [[mods]] #mandatory
 
-modId="examplemod" #mandatory
+modId="experiencemod" #mandatory
 
 version="1.1" #mandatory
 
@@ -26,7 +26,7 @@ description='''
 Experience mod give you up to 7 new enchantments that give's you different effects and increments while you progress on your game!
 '''
 
-[[dependencies.examplemod]] #optional
+[[dependencies.experiencemod]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -38,7 +38,7 @@ Experience mod give you up to 7 new enchantments that give's you different effec
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.experiencemod]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.1]"
