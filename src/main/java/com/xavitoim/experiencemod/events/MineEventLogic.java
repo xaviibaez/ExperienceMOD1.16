@@ -26,12 +26,12 @@ public class MineEventLogic {
         if(player instanceof ServerPlayerEntity){
 
             for(Block block : listBlocksBreak){
-                if(block.getMaterial(block.getDefaultState()) == Material.ROCK){
+                if(block.getDefaultState().getMaterial() == Material.ROCK){
                     blocksBreakRock = blocksBreakRock + ((ServerPlayerEntity) player).getStats().getValue(Stats.BLOCK_MINED.get(block));
                 }
             }
 
-            if(event.getState().getBlock().getMaterial(event.getState()) == Material.ROCK){
+            if(event.getState().getMaterial() == Material.ROCK){
                 player.addPotionEffect(new
                         EffectInstance(Effects.HASTE, 50, blocksBreakRock/100000));
             }
