@@ -1,6 +1,5 @@
 package com.xavitoim.experiencemod.events;
 
-import com.xavitoim.experiencemod.ExperienceMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.LivingEntity;
@@ -34,9 +33,9 @@ public class MineEventLogic {
             }
 
             if(event.getState().getMaterial() == Material.ROCK){
-                ExperienceMod.LOGGER.info("XAVI 0 - "+ blocksBreakRock);
-
-                ((ServerPlayerEntity) player).sendStatusMessage(new TranslationTextComponent("Your mining level is " + blocksBreakRock, "test 1"), true);
+                if(blocksBreakRock%100 == 0){
+                    ((ServerPlayerEntity) player).sendStatusMessage(new TranslationTextComponent("Your mining level is " + blocksBreakRock, "test 1"), true);
+                }
 
                 player.addPotionEffect(new
                         EffectInstance(Effects.HASTE, 50, blocksBreakRock/100000));
