@@ -41,8 +41,4 @@ public class EnchantmentInit {
     public static final RegistryObject<Enchantment> MINE = ENCHANTMENTS.register("mine",
             () -> new MineEnchantment(Enchantment.Rarity.RARE, EnchantmentType.DIGGER,
                     new EquipmentSlotType[] {EquipmentSlotType.MAINHAND}));
-
-
-
-
 }
