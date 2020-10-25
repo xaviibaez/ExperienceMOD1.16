@@ -1,3 +1,7 @@
+Forge site Mod:
+https://www.curseforge.com/minecraft/mc-mods/experience-mod
+==============================
+
 -------------------------------------------
 Source installation information for modders
 -------------------------------------------
